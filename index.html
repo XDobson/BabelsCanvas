@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babel's Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="options">
+        <p>Canvas Height: </p><input min="1" max="500" type="number" id="canvasHeight" value="100" style="font-size: 24px;">
+        <p>Canvas Width: <br><span id="canvasWidth">0</span></p>
+        <button onclick="rollSeed()" style="font-size: 24px;">Roll Seed</button>
+        <textarea id="seed" type="number" placeholder="Seed" style="font-size: 24px;"></textarea>
+        <button onclick="updateCanvas()" style="font-size: 24px;">Set</button>
+
+        <!-- small info button -->
+        <br>
+        <br>
+        <button onclick="toggleInfo()" style="font-size: 14px;">Info</button>
+    </div>
+
+    <div id="info">
+        <p>Welcome to Babel's Canvas. Part of my stupid randomness line of projects, Babel's canvas is similar to the Library of Babel, where technically it contains every picture ever thought up, and not not thought up. </p>
+
+        <p>The results aren't purely random, they are seeded, so you can note down the seed and come back to your favorite works. Though, if every human searched for their entire lives, they'd never find anything of worth here, due to all of the randomness.</p>
+    </div>
+
+    <div id="canvas">
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
